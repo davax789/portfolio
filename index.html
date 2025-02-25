@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="dist/css/all.min.css">
+    <link rel="stylesheet" href="dist/css/style.css">
+    <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="dist/css/toggler.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="dist/css/aos.css">
+
+    
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+
+    <link rel="shortcut icon" href="0_pp.png" type="image/x-icon">
+    <title>Guava Profile</title>
+</head>
+<body>
+    
+    <!-- ===== NAVBAR ===== -->
+
+<nav class="nav-bar z-3">
+  <div class="container d-flex align-items-center justify-content-between">
+    <div class="logo">
+      <h1 class="fw-bold">M<span class="">b</span>u</h1>
+    </div>
+
+    <div class="nav-menu d-flex align-items-center gap-5 list-unstyled">
+      <li onclick="window.location.href='#home';  closeMenu()" class="aktif bg"><a onclick="event.preventDefault();" href="" class="aktif">Home</a></li>
+      <li onclick="window.location.href='#about';  closeMenu() "><a onclick="event.preventDefault();" href="">About Me</a></li>
+      <li onclick="window.location.href='#skill';  closeMenu() "><a onclick="event.preventDefault();" href="">Skills</a></li>
+      <li onclick="window.location.href='#projek';  closeMenu() "><a onclick="event.preventDefault();" href="">Project</a></li>
+      <li onclick="window.location.href='#contact';  closeMenu() "><a onclick="event.preventDefault();" href="">Contact</a></li>
+
+      <div onclick="closeMenu()" class="close-icon d-lg-none">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </div>
+
+    </div>
+
+    <div onclick="toggleBar()" class="bar-menu d-lg-none d-flex">
+      <svg xmlns="http://www.w3.org/2000/svg" width="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bar-chart-2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+    </div>
+  </div>
+</nav>
+
+    <!-- ===== HOME ===== -->
+    <section class="home" id="home">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-12">
+                    <img src="poto1.png" alt="" class="rounded-circle"data-aos="fade-down" data-aos-duration="1500" >
+                    <div class="app" data-aos="fade-up" data-aos-duration="1500">
+                      <h1 id="myName" class="fw-bold mt-3"></h1>
+                      <p id="myDesc"><hr></p>
+                      <a href="https://www.instagram.com/guavaa.a/"target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram mx-2 fs-5"></i></a>
+                      <a href="https://github.com/davax789"target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github mx-2 fs-5"></i></a>
+                      <a href="https://api.whatsapp.com/send/?phone=6285716518531&text&type=phone_number&app_absent=0"target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp mx-2 fs-5"></i></a>
+                      <br>
+                      <br>
+                    </div>
+
+                    <a href="https://api.whatsapp.com/send/?phone=6285716518531&text&type=phone_number&app_absent=0"target="_blank" rel="noopener noreferrer"><div class="btn fw-bold"data-aos="fade-up" data-aos-duration="1500">Contact Me</div></a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ====== ABOUT ME ===== -->
+    <section class="about py-5" id="about">
+        <div class="container text-center">
+            <div class="row text-center justify-content-center pt-5">
+              <div class="col-12 pb-3">
+                <h2 class="fw-bold"data-aos="fade-up" data-aos-duration="1500">About <span>Me</span></h2>
+              </div>
+                <div class="col-lg-9 col-12" data-aos="fade-up" data-aos-duration="1500">
+                  <p class="lh-lg fw-light">Perkenalkan nama saya muhammad dava, saya adalah mahasiswa di Politeknik Negeri Malang ,saya sangat berminat sekali berkarir di bidang it di buktikan dengan saya selalu mempelajari dan update terus tentang perkembangan teknologi saat ini. saya senang sekali belajar hal baru cepat ber adaptasi dan mampu mengerjakan tugas / pekerjaan yang telah di berikan kepada saya.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ====== ABOUT ME END ===== -->
+
+    <!-- WHAT I CAN DO -->
+    <section class="whatt pt-4 pb-5 py-lg-5">
+      <div class="container">
+        <h2 data-aos-duration="1500" data-aos="fade-up" class="text-center mt-3 mt-lg-5 pb-lg-5">Apa Yang Akan Anda Dapatkan ?</h2>
+        <div class="row">
+          <div class="col-6 col-lg-3">
+            <div data-aos="fade-up" data-aos-duration="1500" class="card text-center px-1 py-3 p-sm-3 mt-lg-0 mt-4">
+              <i class="fa-brands fa-shopify icon"></i>
+              <h3>Ecommerce / Toko Online</h3>
+              <p>Website Toko Online dengan bebrapa fitur seperti keranjang, pencarian produk dll</p>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div data-aos="fade-up" data-aos-duration="1500" class="card text-center px-1 py-3 p-sm-3 mt-lg-0 mt-4">
+              <i class="fa-solid fa-briefcase icon"></i>
+              <h3>Company Profile</h3>
+              <p>Website company profile professional lengkap sesuai dengan request dengan beberapa halaman</p>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div data-aos="fade-up" data-aos-duration="1500" class="card text-center px-1 py-3 p-sm-3 mt-lg-0 mt-4">
+              <i class="fa-brands fa-slack icon"></i>
+              <h3>Landing Page Promosi</h3>
+              <p>Website yang mempromosikan usaha jasa atau produk agar mudah di di temukan di google</p>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div data-aos="fade-up" data-aos-duration="1500" class="card text-center px-1 py-3 p-sm-3 mt-lg-0 mt-4">
+              <i class="fa-solid fa-eye icon"></i>
+              <h3>UI / UX</h3>
+              <p>Tampilan visual dari sebuah situs web atau aplikasi.mencakup semua elemen visual,seperti tombol, ikon, warna,dan elemen grafis lainnya.</p>
+            </div>
+          </div>
+          <div class="col-12">
+            <div data-aos-duration="1500" data-aos="fade-up" class="card text-center p-3 mt-4">
+              <h3 class="text center">Dan lain lain</h3>
+              <p>Selain itu saya juga bisa membuatkan anda website costum sesuai apa yang anda inginkan,seperti design ux/ux ,website pribadi, blog, dan website informasi, dll. yang sudah responsif tentunya (bagus di buka di semua perangkat laptop/hp) Dengan desain yang menarik dan modern</p>
+              <a href="https://wa.me/6285716518531?" target="_blank" rel="noopener noreferrer"class="mt-lg-5">Contact Me</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- WHAT I CAN DO END -->
+
+    <!-- SKILL -->
+ <section id="skill" class="skill">
+  <h2 data-aos-duration="1500" data-aos="fade-up"  class="text-center mb-5">Skill</h2>
+  <div class="container">
+    <div class="box-skill">
+
+      <div data-aos-duration="1500" data-aos="fade-up" class="box">
+        <img src="img/HTML5.png" alt="">
+        <span>HTML</span>
+      </div>
+      <div data-aos-duration="1500" data-aos="fade-up" class="box">
+        <img src="img/css.png" alt="">
+        <span>CSS</span>
+      </div>
+      <div data-aos-duration="1500" data-aos="fade-up" class="box">
+        <img src="img/java-hd.png" alt="">
+        <span>JAVA</span>
+      </div>
+      <div data-aos-duration="1500" data-aos="fade-up" class="box">
+        <img src="img/BOOTSTRAP.png" alt="">
+        <span>BOOTSTRAP</span>
+      </div>
+      <div data-aos-duration="900" data-aos="fade-up" class="box">
+        <img src="img/flutter.png" alt="">
+        <span>PHP FLUTTER</span>
+      </div>
+      <div data-aos-duration="1500" data-aos="fade-up" class="box">
+        <img src="img/wp.png" alt="">
+        <span>WORDPRESS</span>
+      </div>
+
+    </div>
+  </div>
+
+ </section>
+    <!-- QUALIFICATIONS END -->
+
+    <!-- PROJECT -->
+    <section class="projek" id="projek">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 pb-5">
+            <h2 data-aos-duration="1500" data-aos="fade-up" class="fw-bold text-center mt-2">PROJECT</h2>
+            <h5 data-aos-duration="1500" data-aos="fade-up" class="text-center">Berikut Adalah Project Yang Pernah Saya Kerjakan</h5>
+          </div>
+
+          <div data-aos-duration="1500" data-aos="fade-up" onclick="showSuxz()" class="col-10 col-lg-4 mt-lg-0 mt-4">
+            <div class="kard rounded-2 overflow-hidden">
+              <img src="Project-img/projectKalkulator.png" class="w-100" alt="">
+            </div>
+            <div class="my-3">
+              <h4>Project Kalkulator</h4>
+              <p>Java</p>
+            </div>
+            <button onclick="showSuxz()" class="btn btn-primary">Preview</button>
+          </div>
+          <div data-aos-duration="1500" data-aos="fade-up" onclick="showKolaborasa()" class="col-10 col-lg-4 mt-4">
+            <div class="kard rounded-2 overflow-hidden">
+              <img src="Project-img/project1.png" class="w-100" alt="">
+            </div>
+            <div class="my-3">
+              <h4>Project Weather</h4>
+              <p>Flutter</p>
+            </div>
+            <button onclick="showKolaborasa()" class="btn btn-primary">Preview</button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- PROJECT END -->
+
+
+    <!-- PREVIEW -->
+
+    <section id="indBuy" class="preview d-none">
+      <div class="bg-preview d-flex flex-column align-items-center">
+      <div class="container">
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="Project-img/Screenshot (20).png" class="img-carousel d-block rounded-2 mx-auto" alt="...">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="btn-prev mt-3 gap-5 d-flex">
+        <div onclick="closePreview()" class="close">Close</div>
+        <a href="https://indbuyme.netlify.app/" class="visit">Visit</a>
+      </div>
+              
+    </div>
+    </section>
+
+
+    <section id="destenize" class="preview d-none">
+      <div class="bg-preview d-flex flex-column align-items-center">
+      <div class="container">
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="Project-img/destenize (1).png" class="img-carousel d-block rounded-2 mx-auto" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="Project-img/destenize (2).png" class="img-carousel d-block rounded-2 mx-auto" alt="...">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="btn-prev mt-3 gap-5 d-flex">
+        <div onclick="closePreview()" class="close">Close</div>
+        <a href="https://destenize.vercel.app/" class="visit">Visit</a>
+      </div>
+              
+    </div>
+    </section>
+
+
+    <section id="suxz" class="preview d-none">
+      <div class="bg-preview d-flex flex-column align-items-center">
+      <div class="container">
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="Project-img/projectKalkulator.png" class="img-carousel d-block rounded-2 mx-auto" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="Project-img/projectKalkulator.png" class="img-carousel d-block rounded-2 mx-auto" alt="...">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="btn-prev mt-3 gap-5 d-flex">
+        <div onclick="closePreview()" class="close">Close</div>
+        <a href="https://github.com/davax789/" class="visit">Visit</a>
+      </div>
+              
+    </div>
+    </section>
+
+
+    <section id="skyCode" class="preview d-none">
+      <div class="bg-preview d-flex flex-column align-items-center">
+      <div class="container">
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="Project-img/Screenshot (28).png" class="img-carousel d-block rounded-2 mx-auto" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="Project-img/Screenshot (28).png" class="img-carousel d-block rounded-2 mx-auto" alt="...">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="btn-prev mt-3 gap-5 d-flex">
+        <div onclick="closePreview()" class="close">Close</div>
+        <a href="https://github.com/davax789/" class="visit">Visit</a>
+      </div>
+              
+    </div>
+    </section>
+
+    <section id="kolaborasa" class="preview d-none">
+      <div class="bg-preview d-flex flex-column align-items-center">
+      <div class="container">
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="Project-img/project1.png" class="img-carousel d-block rounded-2 mx-auto" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="Project-img/project1.png" class="img-carousel d-block rounded-2 mx-auto" alt="...">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="btn-prev mt-3 gap-5 d-flex">
+        <div onclick="closePreview()" class="close">Close</div>
+        <a href="https://github.com/davax789/weather_app_project.git"target="_blank" rel="noopener noreferrer" class="visit">Visit</a>
+      </div>
+              
+    </div>
+    </section>
+
+    <!-- KONTAK -->
+    <section class="kontak" id="contact">
+      <div class="container">
+        <h2 class="fw-bold text-center mb-5">Contact Me</h2>
+        <div class="row">
+          <div class="col-lg-5">
+              <form action="" class=" d-flex flex-column">
+                <input type="text" placeholder="Your Name" required class="nama bg-transparent" id="imfut"> 
+                <input type="email" name="emai" placeholder="Your Email" class="my-2 bg-transparent" id="imfut2">
+  
+                <form action="{{ route('send.email') }}" method="POST">
+                <textarea name="message" id="imfut3" cols="30" rows="6" class="my-3 bg-transparent" placeholder="Message"></textarea>
+                <a href="https://mail.google.com/" class="btn btn-outline-primary"target="_blank" rel="noopener noreferrer" >Submit</a>
+                </form>
+
+          </div>
+
+          <div class="col-lg-2 text-center m-lg-0 my-5">
+            <h2 class="fw-bold ">Or</h2>
+          </div>
+
+          <div class="col-lg-5 d-flex flex-column">
+            <div class="imel m-lg-3">
+              <p><i class="fa-solid fa-envelope fs-3 px-3"></i><span class="fw-light">davamalik17@gmail.com</span></p>
+            </div> 
+            <div class="wa m-lg-3 mt-lg-0 mt-3">
+              <a href="https://wa.me/6285716518531"><i class="fa-brands text-white fa-whatsapp fs-3 px-3"></i><span class="fw-light">+62 857-1651-8531</span></a>
+            </div>
+          
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- KONTAK END -->
+
+    <!-- BACK TO TOP  -->
+    <div class="icon-up">
+      <a href="#home"><i class="fa fa-arrow-circle-up fs-2"></i></a>
+    </div>
+    <!-- BACK TO TOP  -->
+
+    <!-- FOOTER -->
+    <section class="footer py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 d-flex align-items-center gap-5 justify-content-center">
+            <a href="https://www.instagram.com/guavaa.a/"target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram mx-2 fs-5"></i></a>
+            <a href="https://github.com/davax789"target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github mx-2 fs-5"></i></a>
+            <a href="https://api.whatsapp.com/send/?phone=6285716518531&text&type=phone_number&app_absent=0"target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp mx-2 fs-5"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FOOTER END -->
+
+
+
+
+
+    
+
+
+    <script src="dist/js/bootstrap.bundle.js"></script>
+    <script src="dist/js/Font/all.min.js"></script>
+    <script src="dist/js/main.js"></script>
+    <script src="dist/js/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>
